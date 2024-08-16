@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="output/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="font-poppings">
+    <header
+      class="container flex justify-between items-center py-5 px-5 bg-yellow"
+    >
+      <div class="logo w-36 h-12">
+        <a href="#"><img src="./images/logo.png" alt="logo" /></a>
+      </div>
+      <nav
+      id="main_menu"
+        class="main_menu bg-yellow flex justify-between items-center flex-col absolute top-20 left-0 right-0 hidden"
+      >
+        <ul class="flex justify-center items-center flex-col">
+          <li class="w-screen text-center border-t border-t-black">
+            <a class="inline-block text-sm w-full py-2 px-5" href="/index.html"
+              >Home</a
+            >
+          </li>
+          <li class="w-screen text-center border-t border-t-black">
+            <a class="inline-block text-sm w-full py-2 px-5" href="/index.html"
+              >Our Portfolio</a
+            >
+          </li>
+          <li class="w-screen text-center border-t border-t-black">
+            <a class="inline-block text-sm w-full py-2 px-5" href="/index.html"
+              >Our Team</a
+            >
+          </li>
+          <li class="w-screen text-center border-y border-y-black">
+            <a class="inline-block text-sm w-full py-2 px-5" href="/index.html"
+              >Contact Us</a
+            >
+          </li>
+        </ul>
+        <button class="py-2 px-5 my-2 rounded-lg bg-black text-white">
+          Login
+        </button>
+      </nav>
+      <div id="menu">
+        <img src="./images/icon-hamburger.svg" alt="menu" />
+      </div>
+    </header>
+    <script>
+      const menuBar = document.getElementById("menu");
+      menuBar.addEventListener("click", function () {
+        document.getElementById("main_menu").classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
