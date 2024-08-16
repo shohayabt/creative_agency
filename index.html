@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Creative Agency</title>
     <link rel="stylesheet" href="output/output.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,7 +14,7 @@
   </head>
 
   <body class="font-poppings xl:container mx-auto">
-    <header class="bg-yellow px-5 w-full sm:px-10 hidden">
+    <header class="bg-yellow px-5 w-full sm:px-10">
       <nav class="flex justify-between items-center py-5">
         <div class="logo w-36 h-12">
           <a href="#"><img src="./images/logo.png" alt="logo" /></a>
@@ -82,40 +82,76 @@
     <!-- SERVICE SECTION START FROM HERE -->
     <section class="service_section px-5 py-5">
       <div class="info w-full text-center py-5">
-        <h2 class="text-3xl font-semibold sm:text-4xl">Provide awesome <span class="text-green">services</span></h2>
+        <h2 class="text-3xl font-semibold sm:text-4xl">
+          Provide awesome <span class="text-green">services</span>
+        </h2>
       </div>
       <div class="card_container py-5 md:grid md:grid-cols-3 md:gap-x-2.5">
-        <div class="flex justify-center items-center flex-col px-5 py-10 rounded-2xl">
-          <img class="w-[256px]" src="./images/iphone 1.png" alt="image of a mobile phone">
-          <h3 class="font-semibold text-2xl my-2">
-            Web & Mobile design
-          </h3>
+        <div
+          class="flex justify-center items-center flex-col px-5 py-10 rounded-2xl"
+        >
+          <img
+            class="w-[256px]"
+            src="./images/iphone 1.png"
+            alt="image of a mobile phone"
+          />
+          <h3 class="font-semibold text-2xl my-2">Web & Mobile design</h3>
           <p class="text-center">
-            We craft stunning and amazing web UI, using a well drrafted UX to fit your product.
+            We craft stunning and amazing web UI, using a well drrafted UX to
+            fit your product.
           </p>
         </div>
-        <div class="flex justify-center items-center flex-col px-5 my-10 py-10 rounded-2xl shadow-lg shadow-slate-100">
-          <img class="w-[256px]" src="./images/color-palette 1.png" alt="image of a mobile phone">
-          <h3 class="font-semibold text-2xl my-2">
-            Graphic design
-          </h3>
+        <div
+          class="flex justify-center items-center flex-col px-5 my-10 py-10 rounded-2xl shadow-lg shadow-slate-100"
+        >
+          <img
+            class="w-[256px]"
+            src="./images/color-palette 1.png"
+            alt="image of a mobile phone"
+          />
+          <h3 class="font-semibold text-2xl my-2">Graphic design</h3>
           <p class="text-center">
-            Amazing flyers, social media posts and brand representations that would make your brand stand out.
+            Amazing flyers, social media posts and brand representations that
+            would make your brand stand out.
           </p>
         </div>
-        <div class="flex justify-center items-center flex-col px-5 py-10 rounded-2xl">
-          <img class="w-256px" src="./images/coding 1.png" alt="image of a mobile phone">
-          <h3 class="font-semibold text-2xl my-2">
-            Web development
-          </h3>
+        <div
+          class="flex justify-center items-center flex-col px-5 py-10 rounded-2xl"
+        >
+          <img
+            class="w-256px"
+            src="./images/coding 1.png"
+            alt="image of a mobile phone"
+          />
+          <h3 class="font-semibold text-2xl my-2">Web development</h3>
           <p class="text-center">
-            With well written codes, we build amazing apps for all platforms, mobile and web apps in general.
+            With well written codes, we build amazing apps for all platforms,
+            mobile and web apps in general.
           </p>
         </div>
       </div>
     </section>
-
     <!-- SERVICE SECTION END HERE -->
+    <!-- WORK SECTION START FORM HERE -->
+    <section class="py-16 px-5 bg-black">
+      <div class="info w-full text-center py-5">
+        <h2 class="text-3xl font-semibold sm:text-4xl text-white">
+          Here are some of <span class="text-green">our works</span>
+        </h2>
+      </div>
+      <div class="md:py-10 md:grid md:grid-cols-3 md:gap-x-5 md:items-center">
+        <div class="h=80 rounded-2xl overflow-hidden">
+          <img src="./images/Rectangle 16.png" alt="" />
+        </div>
+        <div class="h-80 rounded-2xl overflow-hidden">
+          <img src="./images/Mask Group (1).png" alt="" />
+        </div>
+        <div class="h=80 my-10 rounded-2xl overflow-hidden md:my-0">
+          <img src="./images/Mask Group.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- WORK SECTION END HERE -->
     <script>
       const menuBar = document.getElementById("menu");
       menuBar.addEventListener("click", function () {
