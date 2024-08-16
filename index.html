@@ -14,7 +14,7 @@
   </head>
 
   <body class="font-poppings xl:container mx-auto">
-    <header class="bg-yellow px-5 w-full sm:px-10" >
+    <header class="bg-yellow px-5 w-full sm:px-10 hidden">
       <nav class="flex justify-between items-center py-5">
         <div class="logo w-36 h-12">
           <a href="#"><img src="./images/logo.png" alt="logo" /></a>
@@ -59,7 +59,9 @@
           <img src="./images/icon-hamburger.svg" alt="menu" />
         </div>
       </nav>
-      <section class="hero_section py-5 sm:py-10 lg:grid lg:grid-cols-2 lg:gap-x-5 lg:items-center">
+      <section
+        class="hero_section py-5 sm:py-10 lg:grid lg:grid-cols-2 lg:gap-x-5 lg:items-center"
+      >
         <div class="information">
           <h1 class="font-poppings font-bold text-5xl">
             Let’s Grow Your Brand To The Next Level
@@ -73,10 +75,47 @@
           </button>
         </div>
         <div>
-          <img class="w-full object-cover " src="./images/Frame.png" alt="" />
+          <img class="w-full object-cover" src="./images/Frame.png" alt="" />
         </div>
       </section>
     </header>
+    <!-- SERVICE SECTION START FROM HERE -->
+    <section class="service_section px-5 py-5">
+      <div class="info w-full text-center py-5">
+        <h2 class="text-3xl font-semibold sm:text-4xl">Provide awesome <span class="text-green">services</span></h2>
+      </div>
+      <div class="card_container py-5 md:grid md:grid-cols-3 md:gap-x-2.5">
+        <div class="flex justify-center items-center flex-col px-5 py-10 rounded-2xl">
+          <img class="w-[256px]" src="./images/iphone 1.png" alt="image of a mobile phone">
+          <h3 class="font-semibold text-2xl my-2">
+            Web & Mobile design
+          </h3>
+          <p class="text-center">
+            We craft stunning and amazing web UI, using a well drrafted UX to fit your product.
+          </p>
+        </div>
+        <div class="flex justify-center items-center flex-col px-5 my-10 py-10 rounded-2xl shadow-lg shadow-slate-100">
+          <img class="w-[256px]" src="./images/color-palette 1.png" alt="image of a mobile phone">
+          <h3 class="font-semibold text-2xl my-2">
+            Graphic design
+          </h3>
+          <p class="text-center">
+            Amazing flyers, social media posts and brand representations that would make your brand stand out.
+          </p>
+        </div>
+        <div class="flex justify-center items-center flex-col px-5 py-10 rounded-2xl">
+          <img class="w-256px" src="./images/coding 1.png" alt="image of a mobile phone">
+          <h3 class="font-semibold text-2xl my-2">
+            Web development
+          </h3>
+          <p class="text-center">
+            With well written codes, we build amazing apps for all platforms, mobile and web apps in general.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICE SECTION END HERE -->
     <script>
       const menuBar = document.getElementById("menu");
       menuBar.addEventListener("click", function () {
