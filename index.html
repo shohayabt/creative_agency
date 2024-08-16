@@ -1,70 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="output/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <link rel="stylesheet" href="output/output.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet" />
-</head>
-
-<body class="font-poppings">
-  <header class="bg-yellow px-5 w-full">
-    <nav class="flex justify-between items-center py-5">
-      <div class="logo w-36 h-12">
-        <a href="#"><img src="./images/logo.png" alt="logo" /></a>
-      </div>
-      <ul id="main_menu"
-        class="bg-yellow px-5 absolute top-20 left-0 right-0 hidden md:static md:flex md:justify-between md:items-center">
-        <li class="w-full text-center border-t border-t-black md:border-0">
-          <a class="inline-block text-sm w-full py-2 px-5 text-nowrap" href="/index.html">Home</a>
-        </li>
-        <li class="w-full text-center border-t border-t-black md:border-0">
-          <a class="inline-block text-sm w-full py-2 px-5 text-nowrap" href="/index.html">Our Portfolio</a>
-        </li>
-        <li class="w-full text-center border-t border-t-black md:border-0">
-          <a class="inline-block text-sm w-full py-2 px-5 text-nowrap" href="/index.html">Our Team</a>
-        </li>
-        <li class="w-full text-center border-y border-y-black md:border-0">
-          <a class="inline-block text-sm w-full py-2 px-5 text-nowrap" href="/index.html">Contact Us</a>
-        </li>
-        <button class="py-2 px-5 my-2 rounded-lg bg-black text-white">
-          Login
-        </button>
-      </ul>
-      <div id="menu" class="md:hidden">
-        <img  src="./images/icon-hamburger.svg" alt="menu" />
-      </div>
-    </nav>
-    <section class="hero_section py-5">
-      <div class="information">
-        <h1 class="font-poppings font-bold text-5xl">
-          Let’s Grow Your Brand To The Next Level
-        </h1>
-        <p class="text-lg">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus
-          commodo ipsum duis laoreet maecenas. Feugiat
-        </p>
-        <button class="py-2 px-5 my-2 rounded-lg bg-black text-white">
-          Hire us
-        </button>
-      </div>
-      <div>
-        <img src="./images/Frame.png" alt="" />
-      </div>
-    </section>
-  </header>
-  <script>
-    const menuBar = document.getElementById("menu");
-    menuBar.addEventListener("click", function () {
-      document.getElementById("main_menu").classList.toggle("hidden");
-    });
-  </script>
-</body>
-
+  <body class="font-poppings xl:container mx-auto">
+    <header class="bg-yellow px-5 w-full sm:px-10" >
+      <nav class="flex justify-between items-center py-5">
+        <div class="logo w-36 h-12">
+          <a href="#"><img src="./images/logo.png" alt="logo" /></a>
+        </div>
+        <ul
+          id="main_menu"
+          class="bg-yellow px-5 absolute top-20 left-0 right-0 hidden md:static md:flex md:justify-between md:items-center"
+        >
+          <li class="w-full text-center border-t border-t-black md:border-0">
+            <a
+              class="inline-block text-sm w-full py-2 px-5 text-nowrap"
+              href="/index.html"
+              >Home</a
+            >
+          </li>
+          <li class="w-full text-center border-t border-t-black md:border-0">
+            <a
+              class="inline-block text-sm w-full py-2 px-5 text-nowrap"
+              href="/index.html"
+              >Our Portfolio</a
+            >
+          </li>
+          <li class="w-full text-center border-t border-t-black md:border-0">
+            <a
+              class="inline-block text-sm w-full py-2 px-5 text-nowrap"
+              href="/index.html"
+              >Our Team</a
+            >
+          </li>
+          <li class="w-full text-center border-y border-y-black md:border-0">
+            <a
+              class="inline-block text-sm w-full py-2 px-5 text-nowrap"
+              href="/index.html"
+              >Contact Us</a
+            >
+          </li>
+          <button class="py-2 px-5 my-2 rounded-lg bg-black text-white">
+            Login
+          </button>
+        </ul>
+        <div id="menu" class="md:hidden">
+          <img src="./images/icon-hamburger.svg" alt="menu" />
+        </div>
+      </nav>
+      <section class="hero_section py-5 sm:py-10 lg:grid lg:grid-cols-2 lg:gap-x-5 lg:items-center">
+        <div class="information">
+          <h1 class="font-poppings font-bold text-5xl">
+            Let’s Grow Your Brand To The Next Level
+          </h1>
+          <p class="text-lg my-3">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus
+            commodo ipsum duis laoreet maecenas. Feugiat
+          </p>
+          <button class="py-2 px-5 my-2 rounded-lg bg-black text-white">
+            Hire us
+          </button>
+        </div>
+        <div>
+          <img class="w-full object-cover " src="./images/Frame.png" alt="" />
+        </div>
+      </section>
+    </header>
+    <script>
+      const menuBar = document.getElementById("menu");
+      menuBar.addEventListener("click", function () {
+        document.getElementById("main_menu").classList.toggle("hidden");
+      });
+    </script>
+  </body>
 </html>
